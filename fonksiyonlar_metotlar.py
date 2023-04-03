@@ -4,4 +4,3 @@ def isimleriListele():
         print(isimler[i])
         
 isimleriListele()
-# asdasd

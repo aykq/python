@@ -6,5 +6,3 @@ print(isimler[1])
 print(isimler[2])
 
 print (len(isimler))
-
-# testkspoe

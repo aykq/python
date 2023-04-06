@@ -32,5 +32,14 @@ print(str.replace("k", "n"))
 
 #--------------------------------------------------------
 
-# strip() - karakter kırpma
+# strip() - karakter silme (sadece strip() kullanıldığında sondaki veya baştaki boşlukları siler)
+# strip("-buraya istediğin harfi gir-") şeklinde kullandığında, yazdığın harfi baştan ve sondan siler
 
+str2 = "   bi kac kelimelik string a  "
+yeniStr = str2.strip()
+print(str2)
+print(yeniStr)
+
+str2 = "qbi kac kelimelik stringq"
+yeniStr2 = str2.strip("q")
+print(yeniStr2)

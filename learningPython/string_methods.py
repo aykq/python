@@ -51,3 +51,30 @@ print(yeniStr2)
 str3 = "bi kac kelimelik string"
 print(str3[0])
 print(str3[0:6])
+
+#--------------------------------------------------------
+
+# transform variables - tip dönüşümleri
+
+print("birinci sayi gir")
+birinciSayi = input() # input() kullanıcıdan veri almak için kullanılır
+
+print("ikinci sayi gir")
+ikinciSayi = input()
+
+a = birinciSayi + ikinciSayi
+print("\n" + a + "\n")
+
+b = int(birinciSayi) + int(ikinciSayi)
+print(b)
+
+sayi = 12
+sayidanStringe = str(12)
+type(sayidanStringe)
+print(sayidanStringe)
+
+#--------------------------------------------------------
+
+print("test")
+print("test", "test")
+print("test", "test", sep="_")

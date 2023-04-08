@@ -43,3 +43,11 @@ print(yeniStr)
 str2 = "qbi kac kelimelik stringq"
 yeniStr2 = str2.strip("q")
 print(yeniStr2)
+
+#--------------------------------------------------------
+
+# substring - verilen stringin belirtilen indexindeki değeri yazdırma
+
+str3 = "bi kac kelimelik string"
+print(str3[0])
+print(str3[0:6])

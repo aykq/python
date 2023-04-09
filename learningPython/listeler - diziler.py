@@ -21,8 +21,8 @@ print(type(yeniListe[2]))
 print(type(yeniListe[3]))
 
 tumListeler = [isimler, isimler2, "aa", "12.2", 12]
-print(tumListeler[:2])
-print(tumListeler[0:3])
-print(tumListeler[2:])
-print(tumListeler[1][3])
-print(tumListeler[0][1:])
+print(tumListeler[:2]) # dizinin başında 2. indexteki elemana kadar
+print(tumListeler[0:3]) # 0. indexteki elemandan 3. indexteki elemana kadar
+print(tumListeler[2:]) # 2. indexteki elemandan dizinin sonuna kadar
+print(tumListeler[1][3]) # dizinin 1. indexinde bulunan dizi elemanının içindeki 3. indexteki eleman
+print(tumListeler[0][1:]) # dizinin içindeki dizinin elemanına erişmek

@@ -51,3 +51,8 @@ print(isim4)
 isim4.insert(len(isim4), "beren")
 print(isim4)
 
+isim4.pop(0)
+print(isim4)
+
+#--------------------------------------------------------
+

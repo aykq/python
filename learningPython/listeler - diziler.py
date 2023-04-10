@@ -40,3 +40,11 @@ print(isimler3)
 isimler3.remove(isimler3[0])
 isimler3.remove("berk")
 print(isimler3)
+
+#--------------------------------------------------------
+
+# indexe göre eleman ekleme, silme - insert(), pop()
+
+isim4 = ["ali", "veli", "berk", "deniz", "ayse"]
+isim4.insert(1, "test")
+print(isim4)

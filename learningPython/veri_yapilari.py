@@ -12,3 +12,23 @@ print(type(t))
 # sırasız, değiştirilebilir
 # listelerdeki gibi indexleme yapılamaz
 
+sozluk = {"REG": "Regresyon Modeli",
+          "LOJ": "Lojistik Regresyon",
+          "CART": "Classification and Reg"}
+
+sozluk = {"REG": 10,
+          "LOJ": 20,
+          "CART": 30}
+
+sozluk = {"REG": ["RMSE", 10],
+          "LOJ": ["MSE", 20],
+          "CART": ["SSE", 30]}
+
+print(sozluk)
+
+sozluk = {"REG": "Regresyon Modeli",
+          "LOJ": "Lojistik Regresyon",
+          "CART": "Classification and Reg"}
+
+# print(sozluk[0]) # bu şekilde çalışmaz çünkü indexleme yapılamaz, elemana erişebilmek için aşağıdaki gibi kullan
+print(sozluk["REG"])

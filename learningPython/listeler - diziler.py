@@ -66,7 +66,21 @@ isim4 = ["ali", "veli", "berk", "deniz", "ayse"]
 liste = isimler + isimler2 + isimler3 + isim4
 print(liste)
 
+# count()
 print(liste.count("ayse"))
 print(liste.count("mehmet"))
 
+# copy()
+liste_yedek = liste.copy()
+
+# extend()
+liste.extend(["a", "b", 10])
+print(liste)
+
+# index()
+print(liste.index("ali"))
+
+# reverse()
+liste.reverse()
+print(liste)
 

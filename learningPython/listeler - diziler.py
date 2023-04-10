@@ -34,3 +34,7 @@ print(tumListeler[0][1:]) # dizinin içindeki dizinin elemanına erişmek
 isimler3 = ["ali", "veli", "berk", "deniz", "ayse"]
 print(isimler3)
  
+isimler3.append("armut")
+print(isimler3)
+
+ 

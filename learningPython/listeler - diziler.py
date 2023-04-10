@@ -46,5 +46,8 @@ print(isimler3)
 # indexe göre eleman ekleme, silme - insert(), pop()
 
 isim4 = ["ali", "veli", "berk", "deniz", "ayse"]
-isim4.insert(1, "test")
+isim4.insert(1, "test") # 1. indexe "test" elemanını ekle
 print(isim4)
+isim4.insert(len(isim4), "beren")
+print(isim4)
+

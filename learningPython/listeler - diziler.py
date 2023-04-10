@@ -37,4 +37,6 @@ print(isimler3)
 isimler3.append("armut")
 print(isimler3)
 
- 
+isimler3.remove(isimler3[0])
+isimler3.remove("berk")
+print(isimler3)

@@ -56,3 +56,17 @@ print(isim4)
 
 #--------------------------------------------------------
 
+# diger liste metotları
+
+isimler = ["ahmet", "burak", "mehmet", "ugur"]
+isimler2 = ["fatma", "ayse", "mahmut", "oguz"]
+isimler3 = ["ali", "veli", "berk", "deniz", "ayse"]
+isim4 = ["ali", "veli", "berk", "deniz", "ayse"]
+
+liste = isimler + isimler2 + isimler3 + isim4
+print(liste)
+
+print(liste.count("ayse"))
+print(liste.count("mehmet"))
+
+

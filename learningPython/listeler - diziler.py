@@ -84,3 +84,11 @@ print(liste.index("ali"))
 liste.reverse()
 print(liste)
 
+# sort()
+sayiListe = [72, 66, 10, 55, 33, 44]
+sayiListe.sort()
+print(sayiListe)
+
+# clear()
+sayiListe.clear()
+print(sayiListe)

@@ -26,3 +26,11 @@ print(tumListeler[0:3]) # 0. indexteki elemandan 3. indexteki elemana kadar
 print(tumListeler[2:]) # 2. indexteki elemandan dizinin sonuna kadar
 print(tumListeler[1][3]) # dizinin 1. indexinde bulunan dizi elemanının içindeki 3. indexteki eleman
 print(tumListeler[0][1:]) # dizinin içindeki dizinin elemanına erişmek
+
+#--------------------------------------------------------
+
+# metotlar ile eleman ekleme, silme - append(), remove()
+
+isimler3 = ["ali", "veli", "berk", "deniz", "ayse"]
+print(isimler3)
+ 

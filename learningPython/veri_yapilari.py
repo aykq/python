@@ -32,3 +32,33 @@ sozluk = {"REG": "Regresyon Modeli",
 
 # print(sozluk[0]) # bu şekilde çalışmaz çünkü indexleme yapılamaz, elemana erişebilmek için aşağıdaki gibi kullan
 print(sozluk["REG"])
+print(sozluk["CART"])
+
+#--------------------------------------------------------
+
+sozluk = {"REG": {"RMSE": 10,
+                  "MSE": 20,
+                  "SSE": 30},
+          
+          "LOJ": {"RMSE": 10,
+                  "MSE": 20,
+                  "SSE": 30},        # sözlük içinde sözlük şeklinde de olabilir.
+          
+          "CART": {"RMSE": 10,
+                  "MSE": 20,
+                  "SSE": 30},
+          }
+
+print(sozluk["REG"]["SSE"])
+
+#--------------------------------------------------------
+
+# sözlük yapısında elemen ekleme ve değiştirme
+
+sozluk = {"REG": "Regresyon Modeli",
+          "LOJ": "Lojistik Regresyon",
+          "CART": "Classification and Reg"}
+
+sozluk["GBM"] = "Gradient Boosting Mac"
+print(sozluk)
+

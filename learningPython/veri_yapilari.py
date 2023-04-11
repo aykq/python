@@ -94,3 +94,25 @@ liste = ["lutfen", "ata", "bakma", "uzaya", "git", "ali", "ali", "git"]
 yeniSet = set(liste)
 print(yeniSet)
 
+#--------------------------------------------------------
+
+# set-küme eleman ekleme çıkarma
+
+liste = ["gelecegi", "yazanlar"]
+s = set(liste)
+
+s.add("ile")
+s.add("gelecege_git")
+print(s)
+
+s.remove("ile")         # remove ile silerken, silmeye çalıştığımız eleman set içinde yoksa hata verir
+print(s)                # programın akışı durur.
+
+s.discard("gelecege_git")       # discard ile silme işlemi yaptığımızda, silmek istediğimiz eleman set içinde yoksa
+print(s)                        # bile uyarı vermeden devam eder.
+
+
+#--------------------------------------------------------
+
+# setlerde klasik küme işlemleri
+

@@ -59,6 +59,16 @@ sozluk = {"REG": "Regresyon Modeli",
           "LOJ": "Lojistik Regresyon",
           "CART": "Classification and Reg"}
 
-sozluk["GBM"] = "Gradient Boosting Mac"
+sozluk["GBM"] = "Gradient Boosting Mac"  # burda eleman eklendi
+print(sozluk)
+
+sozluk["REG"] = "Coklu Dogrusal Regresyon"  # burda eleman değiştirdik
+print(sozluk)
+
+sozluk[1] = "Yapay Sinir Aglari"  # "1: Yapay Sinir Aglari" olarak yeni sözlük elemanı eklendi
+print(sozluk)
+
+yeniTuple = ("tuple",)
+sozluk[yeniTuple] = "yeni bir tuple"
 print(sozluk)
 

@@ -72,3 +72,25 @@ yeniTuple = ("tuple",)
 sozluk[yeniTuple] = "yeni bir tuple"
 print(sozluk)
 
+#--------------------------------------------------------
+
+# setler - kümeler oluşturma
+# sırasızdır
+# tekrar eden değerler yoktur
+
+yeniListe = [1, "s", "ali", 123]
+yeniSet = set(yeniListe)                # liste ile yeni set oluşturduk
+print(yeniSet)
+
+t = ("a", "ali")
+yeniSet = set(t)                # tuple ile yeni set oluşturduk
+print(yeniSet)
+
+ali = "lutfen_ata_ba kma_u zaya_git"
+yeniSet = set(ali)
+print(yeniSet)
+
+liste = ["lutfen", "ata", "bakma", "uzaya", "git", "ali", "ali", "git"]
+yeniSet = set(liste)
+print(yeniSet)
+

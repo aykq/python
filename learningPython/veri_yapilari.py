@@ -116,3 +116,9 @@ print(s)                        # bile uyarı vermeden devam eder.
 
 # setlerde klasik küme işlemleri
 
+#difference
+
+set1 = ([1, 3, 5])
+set2 = ([1, 2, 3])
+
+print(set1.difference(set2))

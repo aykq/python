@@ -173,4 +173,3 @@ print(x)
 # bir kümenin diğer kümeyi kapsayıp kapsamadığının kontrolü
 y = set2.issuperset(set1)
 print(y)
-

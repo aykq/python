@@ -135,3 +135,17 @@ print(farkliliklar)
 
 # setlerde kesişim (intersection) ve birleşim (union)
 
+set1 = {1, 3, 5}
+set2 = {1, 2, 3}
+
+kesisim = set1.intersection(set2)          # kesişim işlemi yapıldı
+print(kesisim)
+
+kesisim2 = set1 & set2          # üstteki metot ile kesişim alır ama bu şekilde de kesişim alabilir,z
+print(kesisim2)
+
+birlesim = set1.union(set2)
+print(birlesim)
+
+x = set1.intersection_update(set2)      # bunu tam anlamadım
+print(x)

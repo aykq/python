@@ -118,7 +118,16 @@ print(s)                        # bile uyarı vermeden devam eder.
 
 #difference
 
-set1 = ([1, 3, 5])
-set2 = ([1, 2, 3])
+set1 = {1, 3, 5}
+set2 = {1, 2, 3}
 
-print(set1.difference(set2))
+ikiKumeFarki = set1.difference(set2)    # set1'de olup set2'de olmayanlar
+print(ikiKumeFarki)
+
+ikiKumeFarki = set2.difference(set1)    # set2'de olup set1'de olmayanlar
+print(ikiKumeFarki)
+
+farkliliklar = set1.symmetric_difference(set2)  # ikisinde de ortak olmayanlar
+print(farkliliklar)
+# aynı işlem set1 - set2 veya set2 - set1 şeklinde de yapılabilir.
+

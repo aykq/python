@@ -131,3 +131,7 @@ farkliliklar = set1.symmetric_difference(set2)  # ikisinde de ortak olmayanlar
 print(farkliliklar)
 # aynı işlem set1 - set2 veya set2 - set1 şeklinde de yapılabilir.
 
+#--------------------------------------------------------
+
+# setlerde kesişim (intersection) ve birleşim (union)
+

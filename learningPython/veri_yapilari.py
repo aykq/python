@@ -1,14 +1,15 @@
 # tuple
 # sıralıdır, değiştirilemez
 
-t = ("ali", "veli", 1, 2, 3, [4, 5, 6]) # üç şekilde de (satır 4-5-6) tuple oluşturulabilir
+# üç şekilde de (satır 4-5-6) tuple oluşturulabilir
+t = ("ali", "veli", 1, 2, 3, [4, 5, 6])
 t = "ali", "veli", 1, 2, 3, [4, 5, 6]
 t = ("test",)  # virgüle dikkat
 print(type(t))
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
-# dictionary - sozluk 
+# dictionary - sozluk
 # sırasız, değiştirilebilir
 # listelerdeki gibi indexleme yapılamaz
 
@@ -34,24 +35,24 @@ sozluk = {"REG": "Regresyon Modeli",
 print(sozluk["REG"])
 print(sozluk["CART"])
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 sozluk = {"REG": {"RMSE": 10,
                   "MSE": 20,
                   "SSE": 30},
-          
+
           "LOJ": {"RMSE": 10,
                   "MSE": 20,
                   "SSE": 30},        # sözlük içinde sözlük şeklinde de olabilir.
-          
+
           "CART": {"RMSE": 10,
-                  "MSE": 20,
-                  "SSE": 30},
+                   "MSE": 20,
+                   "SSE": 30},
           }
 
 print(sozluk["REG"]["SSE"])
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 # sözlük yapısında elemen ekleme ve değiştirme
 
@@ -65,14 +66,15 @@ print(sozluk)
 sozluk["REG"] = "Coklu Dogrusal Regresyon"  # burda eleman değiştirdik
 print(sozluk)
 
-sozluk[1] = "Yapay Sinir Aglari"  # "1: Yapay Sinir Aglari" olarak yeni sözlük elemanı eklendi
+# "1: Yapay Sinir Aglari" olarak yeni sözlük elemanı eklendi
+sozluk[1] = "Yapay Sinir Aglari"
 print(sozluk)
 
 yeniTuple = ("tuple",)
 sozluk[yeniTuple] = "yeni bir tuple"
 print(sozluk)
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 # setler - kümeler oluşturma
 # sırasızdır
@@ -94,7 +96,7 @@ liste = ["lutfen", "ata", "bakma", "uzaya", "git", "ali", "ali", "git"]
 yeniSet = set(liste)
 print(yeniSet)
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 # set-küme eleman ekleme çıkarma
 
@@ -105,18 +107,20 @@ s.add("ile")
 s.add("gelecege_git")
 print(s)
 
-s.remove("ile")         # remove ile silerken, silmeye çalıştığımız eleman set içinde yoksa hata verir
+# remove ile silerken, silmeye çalıştığımız eleman set içinde yoksa hata verir
+s.remove("ile")
 print(s)                # programın akışı durur.
 
-s.discard("gelecege_git")       # discard ile silme işlemi yaptığımızda, silmek istediğimiz eleman set içinde yoksa
+# discard ile silme işlemi yaptığımızda, silmek istediğimiz eleman set içinde yoksa
+s.discard("gelecege_git")
 print(s)                        # bile uyarı vermeden devam eder.
 
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 # setlerde klasik küme işlemleri
 
-#difference
+# difference
 
 set1 = {1, 3, 5}
 set2 = {1, 2, 3}
@@ -131,7 +135,7 @@ farkliliklar = set1.symmetric_difference(set2)  # ikisinde de ortak olmayanlar
 print(farkliliklar)
 # aynı işlem set1 - set2 veya set2 - set1 şeklinde de yapılabilir.
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 # setlerde kesişim (intersection) ve birleşim (union)
 
@@ -141,7 +145,8 @@ set2 = {1, 2, 3}
 kesisim = set1.intersection(set2)          # kesişim işlemi yapıldı
 print(kesisim)
 
-kesisim2 = set1 & set2          # üstteki metot ile kesişim alır ama bu şekilde de kesişim alabilir,z
+# üstteki metot ile kesişim alır ama bu şekilde de kesişim alabilir,z
+kesisim2 = set1 & set2
 print(kesisim2)
 
 birlesim = set1.union(set2)
@@ -149,3 +154,23 @@ print(birlesim)
 
 x = set1.intersection_update(set2)      # bunu tam anlamadım
 print(x)
+
+# --------------------------------------------------------
+
+# setlerde sorgu işlemleri
+
+set1 = {4, 13, 76}
+set2 = {3, 4, 76, 5, 13, 11}
+
+# iki kümenin kesişiminin boş olup olmadığının sorgulanması
+a = set1.isdisjoint(set2)
+print(a)
+
+# bir kümenin elemanlarının başka bir küme içerisinde yer alıp almadığının kontrolü - alt kümesi midir mevzusu
+x = set1.issubset(set2)
+print(x)
+
+# bir kümenin diğer kümeyi kapsayıp kapsamadığının kontrolü
+y = set2.issuperset(set1)
+print(y)
+

@@ -4,3 +4,10 @@ def isimleriListele():
         print(isimler[i])
         
 isimleriListele()
+
+# --------------------------------------------------------
+
+def kareAl(x):
+    print("girilen " + str(x) +  " sayisinin karesi: " + str(x**2))
+    
+kareAl(5)

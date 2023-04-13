@@ -43,13 +43,15 @@ def carp(x, y):     # metot parametresi olarak verilen değişkenlerveya döngü
 
 # local ==>> global değişken
 
-x = []
+x = []      # global olan değişken
 
-def elemanEkle(y):
-    x.append(y)
+def elemanEkle(y):      # tanımlanan metot içerisinde x diye bir değişken olmadığı için x değişkenini global olarak
+    x.append(y)         # aramaya başlar ve değiştirir. yani metot içerisinde tanımladığımız x local değişkeni, 
+                        # global olan x değişkenine etki eder.
     print(str(y) + " ifadesi eklendi")
     print(x)
     
 elemanEkle(3)
 elemanEkle(2)
 elemanEkle("ali")
+

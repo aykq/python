@@ -8,10 +8,8 @@ isimleriListele()
 
 # --------------------------------------------------------
 
-
 def kareAl(x):
     print("girilen " + str(x) + " sayisinin karesi: " + str(x**2))
-
 
 kareAl(5)
 
@@ -25,3 +23,9 @@ carpma(3, 5)
 
 # --------------------------------------------------------
 
+# 2 argümanlı fonksiyon - return ile
+def carpma(x, y):
+    return x*y
+    
+cikti = carpma(3, 5)
+print(cikti)

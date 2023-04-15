@@ -9,3 +9,4 @@ elif sayi1 < sayi2:
 
 else:
   print("sayilar esit")
+  

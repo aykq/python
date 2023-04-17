@@ -25,10 +25,18 @@ for i in range(3, 10):  # başlangıç 3, bitiş 9. 10 dahil değil.
 for i in range(2, 31, 2):  # başlangıç 2, bitiş 31. 2 arttırarak say.
     print(i)
 
+
 # --------------------------------------------------------
+
+# dongu ve fonksiyonu beraber kullanmak
+# maaslara %20 zam yapilacak
 
 maaslar = [1000, 2000, 3000, 4000]
 
-for i in maaslar:
-    print(i)
+def zamliMaas(x):
+    print(x*20/100 + x)
 
+# zamliMaas(2000)
+
+for i in maaslar:
+    print(zamliMaas(i))

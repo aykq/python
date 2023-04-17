@@ -25,3 +25,10 @@ for i in range(3, 10):  # başlangıç 3, bitiş 9. 10 dahil değil.
 for i in range(2, 31, 2):  # başlangıç 2, bitiş 31. 2 arttırarak say.
     print(i)
 
+# --------------------------------------------------------
+
+maaslar = [1000, 2000, 3000, 4000]
+
+for i in maaslar:
+    print(i)
+

@@ -40,3 +40,25 @@ def zamliMaas(x):
 
 for i in maaslar:
     print(zamliMaas(i))
+
+# --------------------------------------------------------
+
+# if, for ve fonksiyonları bir arada kullanmak
+# maas > 3000 - %10 zam
+# maas < 3000 - %20 zam
+
+maaslar = [1000, 2000, 4000, 5000]
+
+def yuzdeOn(x):
+    print(x*10/100 + x)
+    
+def yuzdeYirmi(x):
+    print(x*20/100 + x)
+    
+for i in maaslar:
+    if i > 3000:
+        yuzdeOn(i)
+        
+    else:
+        yuzdeYirmi(i)
+        

@@ -3,18 +3,20 @@
 # 1 - class
 
 class test():
-    print("bu bir sinif örnegidir")
-    
+    print("bu bir sinif örnegi")
+
 # --------------------------------------------------------
 
 # class özellikleri
+
 
 class calisanlar():
     bolum = ''
     sql = "evet"
     deneyim = 0
     bildigiDiller = []
-    
+
+
 # sınıfların özelliklerine erişmek
 print(calisanlar.bolum)
 print(calisanlar.sql)
@@ -27,21 +29,25 @@ print(calisanlar.sql)
 ali = calisanlar()
 print(ali.sql)
 print(ali.deneyim)
-ali.bildigiDiller.append("python")  # bu şekilde değiştirme yaptığımızda classta tanımlanan değer de değişir
+# bu şekilde değiştirme yaptığımızda classta tanımlanan değer de değişir
+ali.bildigiDiller.append("python")
 print(ali.bildigiDiller)
 
 veli = calisanlar()
 print(veli.sql)
-print(veli.bildigiDiller)   # classta tanımlanan değer değiştiği için "python" olarak çıktı verir
+# classta tanımlanan değer değiştiği için "python" olarak çıktı verir
+print(veli.bildigiDiller)
 
 # aşağıda bunun çözümünün nasıl yapıldığı var
 
 # --------------------------------------------------------
 
+
 class calisanlar():
-    def __init__(self):     #BURASI ONEMLI 
+    def __init__(self):  # BURASI ONEMLI
         self.bildigiDiller = []
-        
+
+
 ali = calisanlar()
 ali.bildigiDiller.append("python")
 print(ali.bildigiDiller)
@@ -50,22 +56,25 @@ veli = calisanlar()
 veli.bildigiDiller.append("java")
 print(veli.bildigiDiller)
 
-print(calisanlar().bildigiDiller) # bunun boş dönmesinin sebebi classtaki değer direkt olarak değiştirmememiz
+# bunun boş dönmesinin sebebi classtaki değer direkt olarak değiştirmememiz
+print(calisanlar().bildigiDiller)
 
 # --------------------------------------------------------
 
 # üsttekinin devamı
+
 
 class calisanlar():
     bildigiDiller = ["R", "Python"]     # class içinde genel tanımlama yaptık
     bolum = ""
     sql = ""
     deneyimYili = 0
+
     def __init__(self):                 # JAVADAKI CONSTRUCTOR MANTIGI
         self.bildigiDiller = []
         self.bolum = ""
-        
-        
+
+
 ali = calisanlar()
 ali.bildigiDiller.append("python")
 ali.bolum = "end_muh"
@@ -79,4 +88,36 @@ print(veli.bildigiDiller)
 print(veli.deneyimYili)
 
 print(calisanlar.bildigiDiller)
+
+# --------------------------------------------------------
+
+
+class veriBilimci():
+    calisanlar = []
+
+    def __init__(self):     # her veri bilimcinin kendine ait değiştirilebilir özelliğinin olması için burası lazım
+        self.bildigiDiller = []
+        self.bolum = ""
+
+    def dilEkle(self, eklenecekDil):
+        self.bildigiDiller.append(eklenecekDil)
+
+
+ali = veriBilimci()
+print(ali.bildigiDiller)
+print(ali.bolum)
+
+veli = veriBilimci()
+print(veli.bildigiDiller)
+print(veli.bolum)
+
+ali.dilEkle("python")
+print(ali.bildigiDiller)
+
+veli.dilEkle("c++")
+print(veli.bildigiDiller)
+
+# --------------------------------------------------------
+
+# miras yapıları (inheritance)
 

@@ -35,3 +35,48 @@ print(veli.sql)
 print(veli.bildigiDiller)   # classta tanımlanan değer değiştiği için "python" olarak çıktı verir
 
 # aşağıda bunun çözümünün nasıl yapıldığı var
+
+# --------------------------------------------------------
+
+class calisanlar():
+    def __init__(self):     #BURASI ONEMLI 
+        self.bildigiDiller = []
+        
+ali = calisanlar()
+ali.bildigiDiller.append("python")
+print(ali.bildigiDiller)
+
+veli = calisanlar()
+veli.bildigiDiller.append("java")
+print(veli.bildigiDiller)
+
+print(calisanlar().bildigiDiller) # bunun boş dönmesinin sebebi classtaki değer direkt olarak değiştirmememiz
+
+# --------------------------------------------------------
+
+# üsttekinin devamı
+
+class calisanlar():
+    bildigiDiller = ["R", "Python"]     # class içinde genel tanımlama yaptık
+    bolum = ""
+    sql = ""
+    deneyimYili = 0
+    def __init__(self):                 # JAVADAKI CONSTRUCTOR MANTIGI
+        self.bildigiDiller = []
+        self.bolum = ""
+        
+        
+ali = calisanlar()
+ali.bildigiDiller.append("python")
+ali.bolum = "end_muh"
+print(ali.bildigiDiller)
+print(ali.bolum)
+
+veli = calisanlar()
+veli.deneyimYili = 2
+veli.bildigiDiller.append("java")
+print(veli.bildigiDiller)
+print(veli.deneyimYili)
+
+print(calisanlar.bildigiDiller)
+

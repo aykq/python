@@ -29,12 +29,14 @@ print(calisanlar.sql)
 ali = calisanlar()
 print(ali.sql)
 print(ali.deneyim)
+
 # bu şekilde değiştirme yaptığımızda classta tanımlanan değer de değişir
 ali.bildigiDiller.append("python")
 print(ali.bildigiDiller)
 
 veli = calisanlar()
 print(veli.sql)
+
 # classta tanımlanan değer değiştiği için "python" olarak çıktı verir
 print(veli.bildigiDiller)
 
@@ -61,8 +63,8 @@ print(calisanlar().bildigiDiller)
 
 # --------------------------------------------------------
 
-# üsttekinin devamı
 
+# üsttekinin devamı
 
 class calisanlar():
     bildigiDiller = ["R", "Python"]     # class içinde genel tanımlama yaptık
@@ -121,3 +123,38 @@ print(veli.bildigiDiller)
 
 # miras yapıları (inheritance)
 
+
+class employees():
+    def __init__(self):
+        self.firstName = ""
+        self.lastName = ""
+        self.address = ""
+        
+class dataScience(employees):   #parantez içinde referans olarak gönderince, employees() özellikleri miras alındı.
+    def __init__(self):
+        self.programming = ""
+        
+class marketing(employees):
+    def __init__(self):
+        self.storyTelling = ""
+        
+        
+employee1 = dataScience()
+employee1.firstName     # employee() özellikleri miras alındığı için firstName kullanabildik.
+
+mar1 = marketing()
+mar1.lastName           # employee() özellikleri miras alındığı için lastName kullanabildik.
+
+# --------------------------------------------------------
+
+
+# BASKA SEKILDE CLASS OLUSTURMA (MUHTEMELEN DAHA IYI)
+
+class ogrenci(employees):
+    def __init__(self, isim, no, tc):
+        self.isim = isim
+        self.no = no
+        self.tc = tc
+        
+ali = ogrenci("ali", "11", "112233")
+ali.address             # employee() özellikleri miras alındığı için lastName kullanabildik.

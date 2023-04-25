@@ -2,7 +2,6 @@
 
 # 1 - class
 
-import numpy as np
 class test():
     print("bu bir sinif örnegi")
 
@@ -165,24 +164,25 @@ ali.address             # employee() özellikleri miras alındığı için lastN
 # --------------------------------------------------------
 
 
-# vektörel operasyonlar
-# OOP
+# # vektörel operasyonlar
+# # OOP
 
-a = [1, 2, 3, 4]
-b = [2, 3, 4, 5]
+# a = [1, 2, 3, 4]
+# b = [2, 3, 4, 5]
 
-ab = []
+# ab = []
 
-for i in range(0, len(a)):
-    ab.append(a[i]*b[i])
+# for i in range(0, len(a)):
+#     ab.append(a[i]*b[i])
 
-print(ab)
-
-
-# FP - functional programming
+# print(ab)
 
 
-a = np.array([1, 2, 3, 4])
-b = np.array([2, 3, 4, 5])
+# # FP - functional programming
 
-print(a*b)
+# import numpy as np
+
+# a = np.array([1, 2, 3, 4])
+# b = np.array([2, 3, 4, 5])
+
+# print(a*b)

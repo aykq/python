@@ -186,3 +186,38 @@ ali.address             # employee() özellikleri miras alındığı için lastN
 # b = np.array([2, 3, 4, 5])
 
 # print(a*b)
+
+# --------------------------------------------------------
+
+
+# map, filter, reduce fonksiyonları
+
+# her elemana 10 eklemek
+liste = [1, 2, 3, 4, 5]
+
+for i in liste:
+    print(i+10)
+
+# lambda fonksiyon örneği
+
+list(map(lambda x: x+10, liste))    # map fonksiyonu = verilen dizinin içerisinde, verilen fonksiyonu çalıştırmaya yarar.
+
+# --------------
+# filter fonksiyonu
+# şartı sağlayan elemanları filtreler
+
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+list(filter(lambda x: x % 2 == 0, liste))
+print(list(filter(lambda x: x % 2 == 0, liste)))
+
+
+# --------------
+# reduce fonksiyonu
+# indirgeme işlemi yapar
+
+from functools import reduce
+
+liste = [1, 2, 3, 4]
+
+print(reduce(lambda a, b: a + b, liste))    #bunu anlamadım

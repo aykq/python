@@ -2,6 +2,7 @@
 
 # 1 - class
 
+import numpy as np
 class test():
     print("bu bir sinif örnegi")
 
@@ -58,8 +59,7 @@ veli = calisanlar()
 veli.bildigiDiller.append("java")
 print(veli.bildigiDiller)
 
-# bunun boş dönmesinin sebebi classtaki değer direkt olarak değiştirmememiz
-print(calisanlar().bildigiDiller)
+print(calisanlar().bildigiDiller)   # bunun boş dönmesinin sebebi classtaki değer direkt olarak değiştirmememiz
 
 # --------------------------------------------------------
 
@@ -129,16 +129,18 @@ class employees():
         self.firstName = ""
         self.lastName = ""
         self.address = ""
-        
-class dataScience(employees):   #parantez içinde referans olarak gönderince, employees() özellikleri miras alındı.
+
+
+class dataScience(employees):       # parantez içinde referans olarak gönderince, employees() özellikleri miras alındı.
     def __init__(self):
         self.programming = ""
-        
+
+
 class marketing(employees):
     def __init__(self):
         self.storyTelling = ""
-        
-        
+
+
 employee1 = dataScience()
 employee1.firstName     # employee() özellikleri miras alındığı için firstName kullanabildik.
 
@@ -155,6 +157,32 @@ class ogrenci(employees):
         self.isim = isim
         self.no = no
         self.tc = tc
-        
+
+
 ali = ogrenci("ali", "11", "112233")
 ali.address             # employee() özellikleri miras alındığı için lastName kullanabildik.
+
+# --------------------------------------------------------
+
+
+# vektörel operasyonlar
+# OOP
+
+a = [1, 2, 3, 4]
+b = [2, 3, 4, 5]
+
+ab = []
+
+for i in range(0, len(a)):
+    ab.append(a[i]*b[i])
+
+print(ab)
+
+
+# FP - functional programming
+
+
+a = np.array([1, 2, 3, 4])
+b = np.array([2, 3, 4, 5])
+
+print(a*b)

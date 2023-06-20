@@ -1,6 +1,6 @@
 # **Kavramlar**
 
-## 1. **Bağımlı değişken & bağımsız degişken**
+## **1. Bağımlı değişken & bağımsız degişken**
 
 ![Alt text](<photos/1 - bagimli - bagimsiz degisken.png>)
 
@@ -10,7 +10,7 @@
 ## =======================================
 
 
-## 2. **Gözetimli, gözetimsiz, yarı gözetimli öğrenme**
+## **2. Gözetimli, gözetimsiz, yarı gözetimli öğrenme**
 
 ![Alt text](<photos/2 - gozetimli gozetimsiz ogrenme.png>)
 

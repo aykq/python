@@ -1,4 +1,4 @@
-# **Basit Doğrusal Regresyon**
+# **Basit Doğrusal Regresyon - Teori**
 
 + Temel amaç, bağımlı ve bağımsız degişken arasındaki ilişkiyi ifade eden doğrusal fonksiyonu bulmaktır.
 
